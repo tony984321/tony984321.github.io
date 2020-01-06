@@ -1,24 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tony的技术博客</title>
-    <link>http://example.org/</link>
-    <description>Recent content on Tony的技术博客</description>
+    <title>Tony&#39;s Tech Blog</title>
+    <link>https://example.com/</link>
+    <description>Recent content on Tony&#39;s Tech Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Mon, 06 Jan 2020 21:19:12 +0800</lastBuildDate>
+    <copyright>©2019 Notepadium.</copyright>
+    <lastBuildDate>Mon, 06 Jan 2020 22:50:15 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Hugo博客的搭建</title>
+      <link>https://example.com/posts/hugo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA/</link>
+      <pubDate>Mon, 06 Jan 2020 22:50:15 +0800</pubDate>
+      
+      <guid>https://example.com/posts/hugo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA/</guid>
+      <description>折腾了一晚上，总算把hugo博客搬到安装好并搬到github上了，记录一下艰辛过程。 第一步，找到hugo的官网，https://gohugo</description>
+    </item>
+    
+    <item>
       <title>开博大吉</title>
-      <link>http://example.org/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</link>
+      <link>https://example.com/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</link>
       <pubDate>Mon, 06 Jan 2020 21:19:12 +0800</pubDate>
       
-      <guid>http://example.org/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</guid>
-      <description>大家好 我的博客开通了，希望能写出好的文章给大家：）
-Tony</description>
+      <guid>https://example.com/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</guid>
+      <description>大家好 我的博客开通了，希望能写出好的文章给大家：） Tony</description>
     </item>
     
   </channel>
