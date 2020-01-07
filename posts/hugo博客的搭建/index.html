@@ -18,11 +18,11 @@ git remote set-url origin https://mirrors.ustc.edu.cn/brew.git
 cd &quot;$(brew --repo)/Library/Taps/homebrew/homebrew-core&quot;
 git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git 
 </code></pre><p>如过更新后还是卡，有个小技巧，按一下 <code>crtl+c</code>,记住，只要按一下就行，然后就会开始安装。安装完后，我们可以运行</p>
-<pre><code>hugo version
+<pre><code class="language-$xslt" data-lang="$xslt">hugo version
 </code></pre><p>来检测是否安装完成，如果看见版本号，那就OK了。</p>
 <h4 id="step2-创建新站点">step2 创建新站点</h4>
 <p>跟着官方文档在终端输入</p>
-<pre><code>hugo new site quickstart
+<pre><code class="language-$xslt" data-lang="$xslt">hugo new site quickstart
 </code></pre><p>这里请注意，如果未来你要把博客搬到github，那么这个命令要修改为</p>
 <pre><code>hugo new site 你的github的用户名.github.io-generator
 </code></pre><p><strong>这里要敲重点</strong>。</p>
@@ -34,7 +34,7 @@ git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/anan
 </code></pre><p>主题不喜欢以后可以修改</p>
 <h4 id="step4-撰写第一篇博客">step4 撰写第一篇博客</h4>
 <p>运行命令</p>
-<pre><code>hugo new posts/my-first-post.md
+<pre><code class="language-$xslt" data-lang="$xslt">hugo new posts/my-first-post.md
 </code></pre><p>这里的<code>my-first-post</code>可以改成任何名字，然后用编辑打开hugo所在目录，找到content文件夹，就能看到你的文章了，在里面写点什么把。写完后记得把顶部的</p>
 <pre><code class="language-$xslt" data-lang="$xslt">title: &quot;My First Post&quot;
 date: 2019-03-26T08:47:11+01:00
@@ -42,7 +42,7 @@ draft: true
 </code></pre><p>里面的draft的值改为false，这样就可以将文章发布了</p>
 <h4 id="step5-打开hugo-server">step5 打开hugo server</h4>
 <p>运行命令</p>
-<pre><code>hugo server -D
+<pre><code class="language-$xslt" data-lang="$xslt">hugo server -D
 </code></pre><p>然后你会看到如下指令，这就说明本地server开启成功</p>
 <pre><code class="language-$xslt" data-lang="$xslt">
                    | EN
@@ -73,7 +73,7 @@ Press Ctrl+C to stop
 </span><span class="x">theme = &#34;ananke&#34;
 </span></code></pre></div><h4 id="step7-创建静态页面">step7 创建静态页面</h4>
 <p>运行命令</p>
-<pre><code>hugo -D
+<pre><code class="language-$xslt" data-lang="$xslt">hugo -D
 </code></pre><p>博客目录下会自动创建一个文件夹名为public，这里面都是build过的静态文件，也是是未来我们要上传到github的文件。</p>
 <h4 id="step8-上传文件到github">step8 上传文件到github</h4>
 <ol>
