@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>github on Tony&#39;s Tech Blog</title>
+    <link>https://example.com/tags/github/</link>
+    <description>Recent content in github on Tony&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <copyright>©2019 Notepadium.</copyright>
+    <lastBuildDate>Mon, 06 Jan 2020 22:50:15 +0800</lastBuildDate>
+    
+	<atom:link href="https://example.com/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo博客的搭建</title>
+      <link>https://example.com/posts/hugo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA/</link>
+      <pubDate>Mon, 06 Jan 2020 22:50:15 +0800</pubDate>
+      
+      <guid>https://example.com/posts/hugo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA/</guid>
+      <description>折腾了一晚上，总算把hugo博客安装好并搬到github上了，记录一下艰辛过程。 第一步，找到hugo的官网：https://gohugo.i</description>
+    </item>
+    
+  </channel>
+</rss>
