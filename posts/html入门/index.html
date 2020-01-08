@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html><meta charset="utf-8"><meta name="generator" content="Hugo 0.62.2" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark"><title>HTML入门&nbsp;&ndash;&nbsp;Tony&#39;s Tech Blog</title><link rel="stylesheet" href="/css/core.min.56d2637379bb3700e0f833ec5c507848df79368a4347af95da410e008520798224a9a9ce4684b4cfcda15d25d1d1d15c.css" integrity="sha384-VtJjc3m7NwDg&#43;DPsXFB4SN95NopDR6&#43;V2kEOAIUgeYIkqanORoS0z82hXSXR0dFc"><body>
+    <div class="base-body"><section id="header" class="site header max-body-width">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><img class="site logo" src="/img/logo.png" alt /><span class="site name">Tony&#39;s Tech Blog</span></a></span>
+        <span class="header right-side"><div class="nav wrap"><div class="nav"><a class="nav item" href="/categories/">Categories</a><a class="nav item" href="/tags/">Tags</a><a class="nav item" href="/about">About</a></div></div></span></div><div class="site slogan"><span class="title">code lighting my life</span></div></section><div id="content" class="max-body-width"><section class="article header">
+    <h1 class="article title">HTML入门</h1><p class="article date">Wednesday, January 8, 2020</p></section><article class="article markdown-body"><p>说实在的，从最早接触HTML到现在已经快20年了，中间断断续续到现在每天都在用，一度认为自己对HTML就算不精通，
+也应该算熟练了，但昨天听了方老师的课，发现自己对HTML还有许多盲区，有老师带领学习还是比自己摸索精准的多，写个
+博客记录下昨天的学习内容。</p>
+<p>####HTML的由来
+1990年Tim Berners-Lee爵士发明了万维网，使人们可以通过网址来访问互联网上特定的内容，开启了新的纪元，从此整个世界
+通过互联网链接为一体，万维网最初有三大重要元素构成：<code>HTTP，URL，HTML</code>，最初的网页就是由HTML这种超文本标记语言编写，
+然后通过URL来访问。</p>
+<p>####HTML起手式
+打开编辑器，新建Html文档，输入<code>!</code>，然后按tab健，自动生成HTML的结构代码</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p"></span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p"></span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span><span class="p"></span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0&#34;</span><span class="p"></span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">http-equiv</span><span class="o">=</span><span class="s">&#34;X-UA-Compatible&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;ie=edge&#34;</span><span class="p"></span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">title</span><span class="p"></span><span class="p">&gt;</span>Document<span class="p">&lt;</span><span class="p">/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p"></span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div><p>其中lang可以改成zh-CN,可以在head中导入js和css文件，在body中写Html代码，这些以前都知道，一略而过。</p>
+<p>####HTML章节标签
+HTML有很多标签，我们先学习一下最常用的章节标签，常见的章节标签有</p>
+<ol>
+<li>标题 H1-H6</li>
+<li>章节 section</li>
+<li>文章 article</li>
+<li>段落 p</li>
+<li>头部 header</li>
+<li>尾部 footer</li>
+<li>主要内容 main</li>
+<li>旁支内容 aside</li>
+<li>划分 div
+这里面<code>section, article, main, aside</code>我似乎从来没用过，以后可以尝试用一下，以上标签可以使整个HTML看起来层次分明，下面用以上标签写一段代码</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p"></span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p"></span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span><span class="p"></span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0&#34;</span><span class="p"></span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">http-equiv</span><span class="o">=</span><span class="s">&#34;X-UA-Compatible&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;ie=edge&#34;</span><span class="p"></span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">title</span><span class="p"></span><span class="p">&gt;</span>Document<span class="p">&lt;</span><span class="p">/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p"></span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">header</span><span class="p"></span><span class="p">&gt;</span>顶部广告<span class="p">&lt;</span><span class="p">/</span><span class="nt">header</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span><span class="p"></span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">aside</span><span class="p"></span><span class="p">&gt;</span>
+      nav
+    <span class="p">&lt;</span><span class="p">/</span><span class="nt">aside</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">main</span><span class="p"></span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h1</span><span class="p"></span><span class="p">&gt;</span>文章标题<span class="p">&lt;</span><span class="p">/</span><span class="nt">h1</span><span class="p">&gt;</span>
+
+      <span class="p">&lt;</span><span class="nt">section</span><span class="p"></span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h2</span><span class="p"></span><span class="p">&gt;</span>第一章<span class="p">&lt;</span><span class="p">/</span><span class="nt">h2</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p"></span><span class="p">&gt;</span>
+          这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，
+        <span class="p">&lt;</span><span class="p">/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+        <span class="p">&lt;</span><span class="nt">section</span><span class="p"></span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">h3</span><span class="p"></span><span class="p">&gt;</span>1.1节<span class="p">&lt;</span><span class="p">/</span><span class="nt">h3</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">p</span><span class="p"></span><span class="p">&gt;</span>
+            这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，
+          <span class="p">&lt;</span><span class="p">/</span><span class="nt">p</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="p">/</span><span class="nt">section</span><span class="p">&gt;</span>
+
+        <span class="p">&lt;</span><span class="nt">section</span><span class="p"></span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">h3</span><span class="p"></span><span class="p">&gt;</span>1.2节<span class="p">&lt;</span><span class="p">/</span><span class="nt">h3</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">p</span><span class="p"></span><span class="p">&gt;</span>
+            这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，这是一段话，
+          <span class="p">&lt;</span><span class="p">/</span><span class="nt">p</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="p">/</span><span class="nt">section</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="p">/</span><span class="nt">section</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="p">/</span><span class="nt">main</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">footer</span><span class="p"></span><span class="p">&gt;</span>copyright<span class="p">&lt;</span><span class="p">/</span><span class="nt">footer</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">html</span><span class="p">&gt;</span>
+
+</code></pre></div><p>####HTML全局属性
+全局属性是指所有标签都有的属性</p>
+<ol>
+<li><code>class</code> ,最常用属性，可用于定义标签的类别， 通常用于指向样式表的类</li>
+<li><code>contenteditable</code>，可使标签下内容在浏览器内进入可编辑状态</li>
+<li><code>hidden</code>, 可让标签内容消失，可通过css <code>display: block</code>再次显示</li>
+<li><code>id</code>,并非全局唯一，因为如果出现两个相同id，浏览器并不报错，因此非必须不建议用id</li>
+<li><code>style</code>, 定义标签样式，优先级别 css &lt; elem_style &lt; js</li>
+<li><code>tabindex</code>, 不常用，定义标签tab切换的优先级别，tabindex = 0 表示优先级在最后，tabindex = 1表示不在切换范围内
+7。 <code>title</code>, 定义鼠标移到dom上所显示的文字</li>
+</ol>
+<p>####HTML默认样式
+每个标签都有默认样式，但这些样式通常不是很好看，所以我们写前端代码前，通常要reset一些默认样式，示例如下：</p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="o">*</span> <span class="p">{</span>
+  <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">box-sizing</span><span class="p">:</span> <span class="kc">border-box</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="o">*</span><span class="p">::</span><span class="nd">before</span><span class="o">,</span>
+<span class="o">*</span><span class="p">::</span><span class="nd">after</span> <span class="p">{</span>
+  <span class="k">box-sizing</span><span class="p">:</span> <span class="kc">border-box</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span> <span class="p">{</span>
+  <span class="k">color</span><span class="p">:</span> <span class="kc">inherit</span><span class="p">;</span>
+  <span class="k">text-decoration</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">input</span><span class="o">,</span>
+<span class="nt">button</span> <span class="p">{</span>
+  <span class="k">font-family</span><span class="p">:</span> <span class="kc">inherit</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">ol</span><span class="o">,</span>
+<span class="nt">ul</span> <span class="p">{</span>
+  <span class="k">list-style</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">table</span> <span class="p">{</span>
+  <span class="k">border-collapse</span><span class="p">:</span> <span class="kc">collapse</span><span class="p">;</span>
+  <span class="k">border-spacing</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div><p>*表示全局通用匹配符</p>
+<p>####HTML内容标签</p>
+<ol>
+<li><code>ol +  li</code> (ordered list + list item)</li>
+<li><code>ul +  li</code> (unordered list + list item)</li>
+<li><code>dl +  dt + dd</code> (description list + term + data)</li>
+<li><code>pre</code> (preview，该标签可使多个空格，回车在页面里生效)</li>
+<li><code>br</code> (换行)</li>
+<li><code>hr</code> (生成水平直线)</li>
+<li><code>a</code> (该标签通常用于链接)</li>
+<li><code>em</code> (斜体，表语气强调)</li>
+<li><code>strong</code> (粗体，表内容强调)</li>
+<li><code>code</code> (格式化代码)</li>
+<li><code>q</code> (引用，不常用)</li>
+<li><code>blockquote</code> (块级引用，不常用)</li>
+</ol>
+<p>以上为Html的一些入门知识，通过总结，了解了很多以前不知道的一些知识和用法，以后会在实际场景中应用，使html代码更具结构性和可读性，用博客记录所学真是一个很好的习惯，要坚持.</p>
+</article><section class="article labels"><a class="article category" href=/categories/html%E7%9F%A5%E8%AF%86/><span class="hashtag">#</span>HTML知识</a><a class="article tag" href=/tags/html/><span class="hashtag">#</span>HTML</a><a class="article tag" href=/tags/%E5%85%A5%E9%97%A8/><span class="hashtag">#</span>入门</a></section><section class="article navigation"><p><a class="link" href="/posts/hugo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA/"><span class="li"></span>Hugo博客的搭建</a class="link">
+    </p></section></div><section id="footer" class="footer max-body-width"><div class="footer-wrap">
+    <p class="copyright">©2019 Notepadium.</p>
+    <p class="powerby"><span>Powered by </span><a href="https://gohugo.io" 
+        target="_blank">Hugo</a><span> and the </span><a href="https://themes.gohugo.io/hugo-notepadium/" 
+        target="_blank">Notepadium</a></p>
+</div></section><script src="/js/prism.min.28f2bfd6dfaa7ad0e8b973373bb7db234d27a2faafc26d5ffd2de4c2b1b5f2bf80011f2e2976dc9fb364abb13f63ebdc.js" integrity="sha384-KPK/1t&#43;qetDouXM3O7fbI00novqvwm1f/S3kwrG18r&#43;AAR8uKXbcn7Nkq7E/Y&#43;vc"></script></div>
+</body>
+
+</html>
