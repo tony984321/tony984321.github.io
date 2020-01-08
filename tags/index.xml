@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
     <copyright>©2019 Notepadium.</copyright>
-    <lastBuildDate>Wed, 08 Jan 2020 09:15:56 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jan 2020 21:56:20 +0800</lastBuildDate>
     
 	<atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>HTML</title>
       <link>https://example.com/tags/html/</link>
-      <pubDate>Wed, 08 Jan 2020 09:15:56 +0800</pubDate>
+      <pubDate>Wed, 08 Jan 2020 21:56:20 +0800</pubDate>
       
       <guid>https://example.com/tags/html/</guid>
       <description></description>

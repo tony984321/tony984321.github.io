@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html><meta charset="utf-8"><meta name="generator" content="Hugo 0.62.2" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark"><title>HTML常用标签&nbsp;&ndash;&nbsp;Tony&#39;s Tech Blog</title><link rel="stylesheet" href="/css/core.min.56d2637379bb3700e0f833ec5c507848df79368a4347af95da410e008520798224a9a9ce4684b4cfcda15d25d1d1d15c.css" integrity="sha384-VtJjc3m7NwDg&#43;DPsXFB4SN95NopDR6&#43;V2kEOAIUgeYIkqanORoS0z82hXSXR0dFc"><body>
+    <div class="base-body"><section id="header" class="site header max-body-width">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><img class="site logo" src="/img/logo.png" alt /><span class="site name">Tony&#39;s Tech Blog</span></a></span>
+        <span class="header right-side"><div class="nav wrap"><div class="nav"><a class="nav item" href="/categories/">Categories</a><a class="nav item" href="/tags/">Tags</a><a class="nav item" href="/about">About</a></div></div></span></div><div class="site slogan"><span class="title">code lighting my life</span></div></section><div id="content" class="max-body-width"><section class="article header">
+    <h1 class="article title">HTML常用标签</h1><p class="article date">Wednesday, January 8, 2020</p></section><article class="article markdown-body"><p>今天学习了HTML的常用标签，记录如下</p>
+<h3 id="a标签">a标签</h3>
+<h4 id="1-a标签的作用">1. a标签的作用</h4>
+<p>跳转外部页面，跳转内部锚点， 跳转邮箱电话等</p>
+<h4 id="2-a标签的属性">2. a标签的属性</h4>
+<p><code>href</code>输入跳转路径，取值为</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://google.com&#34;</span><span class="p"></span><span class="p">&gt;</span>google<span class="p">&lt;</span><span class="p">/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;http://google.com&#34;</span><span class="p"></span><span class="p">&gt;</span>google<span class="p">&lt;</span><span class="p">/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;//google.com&#34;</span><span class="p"></span><span class="p">&gt;</span>google<span class="p">&lt;</span><span class="p">/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/a/index.html&#34;</span><span class="p"></span><span class="p">&gt;</span>google<span class="p">&lt;</span><span class="p">/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;a/index.html&#34;</span><span class="p"></span><span class="p">&gt;</span>google<span class="p">&lt;</span><span class="p">/</span><span class="nt">a</span><span class="p">&gt;</span> //相对路径
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;javascript:;&#34;</span><span class="p"></span><span class="p">&gt;</span>google<span class="p">&lt;</span><span class="p">/</span><span class="nt">a</span><span class="p">&gt;</span> //可以在里面写js代码，如果什么都不写，点击该标签页面不发生任何变化
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;mailto: 1234@qq.com&#34;</span><span class="p"></span><span class="p">&gt;</span>发邮件<span class="p">&lt;</span><span class="p">/</span><span class="nt">a</span><span class="p">&gt;</span> //发送邮件
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;tel: 1380013800&#34;</span><span class="p"></span><span class="p">&gt;</span>打电话<span class="p">&lt;</span><span class="p">/</span><span class="nt">a</span><span class="p">&gt;</span> //点击会自动拨号，多用于手机页面
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#xxx&#34;</span><span class="p"></span><span class="p">&gt;</span>跳转到xxx<span class="p">&lt;</span><span class="p">/</span><span class="nt">a</span><span class="p">&gt;</span> //跳转到内部id
+</code></pre></div><p><code>target</code>输入跳转位置，取值为</p>
+<ol>
+<li><code>_blank</code> 在新开窗口打开跳转页面</li>
+<li><code>_self</code> 在原窗口打开跳转页面</li>
+<li><code>top</code> 主要用于iframe嵌套页面，在顶层窗口打开跳转页面</li>
+<li><code>parent</code> 主要用于iframe嵌套页面，在父窗口打开跳转页面</li>
+<li>可以指定跳转名为xxx窗口或名为xxx的iframe，所有<code>target=&quot;xxx&quot;</code>的a标签跳转都可以在这个页面打开</li>
+</ol>
+<p><code>download</code>可忽略，因为不是所有浏览器都支持</p>
+<h3 id="iframe标签">iframe标签</h3>
+<p>该标签作用为把一个或多个页面内嵌到另一个页面里，但目前已不常用，写法为</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;./index.html&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;xxx&#34;</span><span class="p"></span><span class="p">&gt;</span><span class="p">&lt;</span><span class="p">/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+</code></pre></div><h3 id="table标签">table标签</h3>
+<p><code>table</code>标签里只能有三个标签<code>thead</code>, <code>tbody</code>, <code>tfoot</code>,这三个标签里可以使用另外三个标签<code>tr</code>,<code>td</code>,<code>th</code>, <code>th</code>表示表头，<code>tr</code>表示一行，<code>td</code>表示data，示例代码如下：</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">table</span><span class="p"></span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">thead</span><span class="p"></span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">tr</span><span class="p"></span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">th</span><span class="p"></span><span class="p">&gt;</span>星期一<span class="p">&lt;</span><span class="p">/</span><span class="nt">th</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">th</span><span class="p"></span><span class="p">&gt;</span>星期二<span class="p">&lt;</span><span class="p">/</span><span class="nt">th</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="p">/</span><span class="nt">tr</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="p">/</span><span class="nt">thead</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">tbody</span><span class="p"></span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">tr</span><span class="p"></span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">td</span><span class="p"></span><span class="p">&gt;</span>语文<span class="p">&lt;</span><span class="p">/</span><span class="nt">td</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">td</span><span class="p"></span><span class="p">&gt;</span>数学<span class="p">&lt;</span><span class="p">/</span><span class="nt">td</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="p">/</span><span class="nt">tr</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">tr</span><span class="p"></span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">td</span><span class="p"></span><span class="p">&gt;</span>英语<span class="p">&lt;</span><span class="p">/</span><span class="nt">td</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">td</span><span class="p"></span><span class="p">&gt;</span>体育<span class="p">&lt;</span><span class="p">/</span><span class="nt">td</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="p">/</span><span class="nt">tr</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="p">/</span><span class="nt">tbody</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">tfoot</span><span class="p"></span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">tr</span><span class="p"></span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">td</span><span class="p"></span><span class="p">&gt;</span>2节课<span class="p">&lt;</span><span class="p">/</span><span class="nt">td</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">td</span><span class="p"></span><span class="p">&gt;</span>2节课<span class="p">&lt;</span><span class="p">/</span><span class="nt">td</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="p">/</span><span class="nt">tr</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="p">/</span><span class="nt">tfoot</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">table</span><span class="p">&gt;</span>
+</code></pre></div><p>table相关样式：<code>table-layout</code>, <code>border-collapse</code>, <code>border-spacing</code>, 通常用法</p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">table</span> <span class="p">{</span>
+  <span class="k">border-collapse</span><span class="p">:</span> <span class="kc">collapse</span><span class="p">;</span>
+  <span class="k">border-spacing</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div><h3 id="img标签">img标签</h3>
+<h4 id="1-img标签的作用">1. img标签的作用</h4>
+<p>发出get请求，展示一张图片</p>
+<h4 id="2-img标签的属性">2. img标签的属性</h4>
+<p><code>alt</code>, <code>height</code>, <code>width</code>, <code>src</code>, 写法：</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;./image/1.jpg&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;100&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;图片加载失败看到我&#34;</span> <span class="p">/</span><span class="p">&gt;</span>
+</code></pre></div><p>如要图片自适应浏览器宽度，在img标签的样式里加入</p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">img</span> <span class="p">{</span>
+  <span class="k">max-width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div><p>定义图片的宽高有很多方式，但有一个前提，不能让图片失真，这是作为一个前端的底线。</p>
+<p>img标签是一种可替换元素，关于可替换元素，可参考这篇文章，个人觉得比MDN上写的清楚，<a href="https://www.cnblogs.com/leyili/p/replaced_element.html"target="_blank">https://www.cnblogs.com/leyili/p/replaced_element.html</a></p>
+<h3 id="form标签">form标签</h3>
+<h4 id="1-form标签的作用">1. form标签的作用</h4>
+<p>发出get或post请求，然后刷新页面</p>
+<h4 id="2-form标签的属性">2. form标签的属性</h4>
+<p><code>action</code>, <code>autocomplete</code>, <code>method</code>, <code>target</code>, <code>target</code>用法同a标签， 写法：</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&#34;https://api.sitename.com/api/request&#34;</span> <span class="na">method</span><span class="o">=</span><span class="s">&#34;post&#34;</span><span class="p"></span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;aaa&#34;</span> <span class="na">disabled</span> <span class="p">/</span><span class="p">&gt;</span> //禁止输入
+   <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;password&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;bbb&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;xxxxx&#34;</span> <span class="p">/</span><span class="p">&gt;</span> //没有输入时默认值为xxx
+   <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;number&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;ccc&#34;</span> <span class="na">required</span> <span class="p">/</span><span class="p">&gt;</span> //必须输入
+   <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;male&#34;</span><span class="p"></span><span class="p">&gt;</span>Male<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;radio&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;gender&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;male&#34;</span> <span class="p">/</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;female&#34;</span><span class="p"></span><span class="p">&gt;</span>female<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span> //label 标签为 input 元素定义标注, 当点击label标签时，相对应的input将获得焦点
+   <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;radio&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;gender&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;female&#34;</span><span class="p">/</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;checkbox&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;season&#34;</span> <span class="p">/</span><span class="p">&gt;</span> spring
+   <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;checkbox&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;season&#34;</span> <span class="p">/</span><span class="p">&gt;</span> summer
+   <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;checkbox&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;season&#34;</span> <span class="p">/</span><span class="p">&gt;</span> autumn
+   <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;checkbox&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;season&#34;</span> <span class="p">/</span><span class="p">&gt;</span> winter
+   <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;file&#34;</span> <span class="na">multiple</span> <span class="p">/</span><span class="p">&gt;</span> 
+   <span class="p">&lt;</span><span class="nt">select</span><span class="p"></span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;1&#34;</span><span class="p"></span><span class="p">&gt;</span>上海<span class="p">&lt;</span><span class="p">/</span><span class="nt">option</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;2&#34;</span><span class="p"></span><span class="p">&gt;</span>北京<span class="p">&lt;</span><span class="p">/</span><span class="nt">option</span><span class="p">&gt;</span>
+     <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;3&#34;</span><span class="p"></span><span class="p">&gt;</span>广州<span class="p">&lt;</span><span class="p">/</span><span class="nt">option</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="p">/</span><span class="nt">select</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">textarea</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;&#34;</span><span class="p"></span><span class="p">&gt;</span><span class="p">&lt;</span><span class="p">/</span><span class="nt">textarea</span><span class="p">&gt;</span> //resize = none 可禁止拖拽
+   <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;submit&#34;</span><span class="p"></span><span class="p">&gt;</span>submit<span class="p">&lt;</span><span class="p">/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">form</span><span class="p">&gt;</span>
+</code></pre></div><h4 id="2-form标签的事件">2. form标签的事件</h4>
+<p><code>onchange</code>, <code>onfocus</code>, <code>onblur</code></p>
+<p><code>onchange</code>当表单的值发生变化时触发； <code>onfocus</code>当表单获得焦点时触发；<code>onblur</code>为当表单失去焦点时触发。</p>
+<p>以上为今日所学，</p>
+</article><section class="article labels"><a class="article category" href=/categories/html%E7%9F%A5%E8%AF%86/><span class="hashtag">#</span>HTML知识</a><a class="article tag" href=/tags/html/><span class="hashtag">#</span>HTML</a></section><section class="article navigation"><p><a class="link" href="/posts/html%E5%85%A5%E9%97%A8/"><span class="li"></span>HTML入门</a class="link">
+    </p></section></div><section id="footer" class="footer max-body-width"><div class="footer-wrap">
+    <p class="copyright">©2019 Notepadium.</p>
+    <p class="powerby"><span>Powered by </span><a href="https://gohugo.io" 
+        target="_blank">Hugo</a><span> and the </span><a href="https://themes.gohugo.io/hugo-notepadium/" 
+        target="_blank">Notepadium</a></p>
+</div></section><script src="/js/prism.min.28f2bfd6dfaa7ad0e8b973373bb7db234d27a2faafc26d5ffd2de4c2b1b5f2bf80011f2e2976dc9fb364abb13f63ebdc.js" integrity="sha384-KPK/1t&#43;qetDouXM3O7fbI00novqvwm1f/S3kwrG18r&#43;AAR8uKXbcn7Nkq7E/Y&#43;vc"></script></div>
+</body>
+
+</html>

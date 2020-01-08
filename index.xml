@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
     <copyright>©2019 Notepadium.</copyright>
-    <lastBuildDate>Wed, 08 Jan 2020 09:15:56 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jan 2020 21:56:20 +0800</lastBuildDate>
     
 	<atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HTML常用标签</title>
+      <link>https://example.com/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</link>
+      <pubDate>Wed, 08 Jan 2020 21:56:20 +0800</pubDate>
+      
+      <guid>https://example.com/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</guid>
+      <description>今天学习了HTML的常用标签，记录如下 a标签 1. a标签的作用 跳转外部页面，跳转内部锚点， 跳转邮箱电话等 2. a标签的属性 href输入跳转路径，取值</description>
+    </item>
     
     <item>
       <title>HTML入门</title>
