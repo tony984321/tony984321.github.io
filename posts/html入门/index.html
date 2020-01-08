@@ -38,10 +38,10 @@
 <li>尾部 footer</li>
 <li>主要内容 main</li>
 <li>旁支内容 aside</li>
-<li>划分 div<br>
-这里面<code>section, article, main, aside</code>我似乎从来没用过，以后可以尝试用一下，以上标签可以使整个HTML看起来层次分明，下面用以上标签写一段代码</li>
+<li>划分 div</li>
 </ol>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
+<p>这里面<code>section, article, main, aside</code>我似乎从来没用过，以后可以尝试用一下，以上标签可以使整个HTML看起来层次分明，下面用以上标签写一段代码</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p"></span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">head</span><span class="p"></span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span><span class="p"></span><span class="p">&gt;</span>
@@ -92,8 +92,8 @@
 <li><code>hidden</code>, 可让标签内容消失，可通过css <code>display: block</code>再次显示</li>
 <li><code>id</code>,并非全局唯一，因为如果出现两个相同id，浏览器并不报错，因此非必须不建议用id</li>
 <li><code>style</code>, 定义标签样式，优先级别 css &lt; elem_style &lt; js</li>
-<li><code>tabindex</code>, 不常用，定义标签tab切换的优先级别，tabindex = 0 表示优先级在最后，tabindex = 1表示不在切换范围内
-7。 <code>title</code>, 定义鼠标移到dom上所显示的文字</li>
+<li><code>tabindex</code>, 不常用，定义标签tab切换的优先级别，tabindex = 0 表示优先级在最后，tabindex = 1表示不在切换范围内</li>
+<li><code>title</code>, 定义鼠标移到dom上所显示的文字</li>
 </ol>
 <h4 id="html默认样式">HTML默认样式</h4>
 <p>每个标签都有默认样式，但这些样式通常不是很好看，所以我们写前端代码前，通常要reset一些默认样式，示例如下：</p>
