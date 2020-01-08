@@ -8,12 +8,12 @@
     <h1 class="article title">HTML入门</h1><p class="article date">Wednesday, January 8, 2020</p></section><article class="article markdown-body"><p>说实在的，从最早接触HTML到现在已经快20年了，中间断断续续到现在每天都在用，一度认为自己对HTML就算不精通，
 也应该算熟练了，但昨天听了方老师的课，发现自己对HTML还有许多盲区，有老师带领学习还是比自己摸索精准的多，写个
 博客记录下昨天的学习内容。</p>
-<p>####HTML的由来
-1990年Tim Berners-Lee爵士发明了万维网，使人们可以通过网址来访问互联网上特定的内容，开启了新的纪元，从此整个世界
+<h4 id="html的由来">HTML的由来</h4>
+<p>1990年Tim Berners-Lee爵士发明了万维网，使人们可以通过网址来访问互联网上特定的内容，开启了新的纪元，从此整个世界
 通过互联网链接为一体，万维网最初有三大重要元素构成：<code>HTTP，URL，HTML</code>，最初的网页就是由HTML这种超文本标记语言编写，
 然后通过URL来访问。</p>
-<p>####HTML起手式
-打开编辑器，新建Html文档，输入<code>!</code>，然后按tab健，自动生成HTML的结构代码</p>
+<h4 id="html起手式">HTML起手式</h4>
+<p>打开编辑器，新建Html文档，输入<code>!</code>，然后按tab健，自动生成HTML的结构代码</p>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
 <span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p"></span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">head</span><span class="p"></span><span class="p">&gt;</span>
@@ -27,8 +27,8 @@
 <span class="p">&lt;</span><span class="p">/</span><span class="nt">body</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="p">/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div><p>其中lang可以改成zh-CN,可以在head中导入js和css文件，在body中写Html代码，这些以前都知道，一略而过。</p>
-<p>####HTML章节标签
-HTML有很多标签，我们先学习一下最常用的章节标签，常见的章节标签有</p>
+<h4 id="html章节标签">HTML章节标签</h4>
+<p>HTML有很多标签，我们先学习一下最常用的章节标签，常见的章节标签有</p>
 <ol>
 <li>标题 H1-H6</li>
 <li>章节 section</li>
@@ -84,8 +84,8 @@ HTML有很多标签，我们先学习一下最常用的章节标签，常见的�
 <span class="p">&lt;</span><span class="p">/</span><span class="nt">body</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="p">/</span><span class="nt">html</span><span class="p">&gt;</span>
 
-</code></pre></div><p>####HTML全局属性
-全局属性是指所有标签都有的属性</p>
+</code></pre></div><h4 id="html全局属性">HTML全局属性</h4>
+<p>全局属性是指所有标签都有的属性</p>
 <ol>
 <li><code>class</code> ,最常用属性，可用于定义标签的类别， 通常用于指向样式表的类</li>
 <li><code>contenteditable</code>，可使标签下内容在浏览器内进入可编辑状态</li>
@@ -95,8 +95,8 @@ HTML有很多标签，我们先学习一下最常用的章节标签，常见的�
 <li><code>tabindex</code>, 不常用，定义标签tab切换的优先级别，tabindex = 0 表示优先级在最后，tabindex = 1表示不在切换范围内
 7。 <code>title</code>, 定义鼠标移到dom上所显示的文字</li>
 </ol>
-<p>####HTML默认样式
-每个标签都有默认样式，但这些样式通常不是很好看，所以我们写前端代码前，通常要reset一些默认样式，示例如下：</p>
+<h4 id="html默认样式">HTML默认样式</h4>
+<p>每个标签都有默认样式，但这些样式通常不是很好看，所以我们写前端代码前，通常要reset一些默认样式，示例如下：</p>
 <div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="o">*</span> <span class="p">{</span>
   <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
   <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
@@ -123,7 +123,7 @@ HTML有很多标签，我们先学习一下最常用的章节标签，常见的�
   <span class="k">border-spacing</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div><p>*表示全局通用匹配符</p>
-<p>####HTML内容标签</p>
+<h4 id="html内容标签">HTML内容标签</h4>
 <ol>
 <li><code>ol +  li</code> (ordered list + list item)</li>
 <li><code>ul +  li</code> (unordered list + list item)</li>
